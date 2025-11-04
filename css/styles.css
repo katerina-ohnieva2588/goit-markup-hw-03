@@ -8,14 +8,44 @@ body {
     color: #434455;
     background-color: #fff;
 }
- 
+ /* reset */ 
 ul, 
 ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
 
 a { 
     text-decoration: none;
+}
+
+/* common*/
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container { 
+    display: flex;
+    align-items: center;
+}
+
+.heder-nav {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -28,6 +58,14 @@ a {
         text-transform: uppercase;
         color: #4d5ae5;
 }
+
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+}
+
+
+
 .header-logo .logo-part {
     color: #2e2f42;
 }
@@ -36,7 +74,15 @@ a {
     color: #f4f4fd;
 }
 
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .nav-link {
+        display: block;
+        padding: 24px 0;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -44,12 +90,20 @@ a {
         color: #2e2f42;
 }
 
-
 .contacts {
-    font-style: normal ;
+    font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .contacts-link {
+    display: block;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -65,7 +119,23 @@ a {
 
 .section-hero {
     background-color: #2E2F42;
+    width: 1440px;
+    text-align: center;
+    padding: 188px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.hero-content {
+    margin: 0 auto;
+    max-width: 496px;
+    text-align: center;
+    display: block;
+    
+}
+
 
 .title-hero {
     font-weight: 700;
@@ -73,8 +143,8 @@ a {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #fff;
-    text-align: center;
-    
+    max-width: 496px;
+    margin-bottom: 40px;  
 }
 
 .button {
@@ -85,6 +155,12 @@ a {
     background: #4d5ae5;
     color: #fff;
     cursor: pointer;
+    padding: 16px, 32px ;
+    border: none; 
+    margin-top: 48px;
+   
+   
+ 
 }
 
 .button:hover,
@@ -92,6 +168,21 @@ a {
     background-color:#404bbf;
 }
  
+
+.section-second {
+    padding: 112px 0;
+    
+}
+
+.section-title {
+    display: none;
+}
+.section-title-list {
+    max-width: 1128px;
+    margin: auto;
+    display: flex;
+    
+}
 
 .section-add-title {
     font-weight: 500;
@@ -110,26 +201,49 @@ a {
     color: #434455;
 }
 
-.our-team {
-    background-color: #f4f4fd;
+.container-title {
+    
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-
+.our-team {
+    background-color: #f4f4fd;
+    margin-bottom: 120px;
+} 
 .team-title {
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    align-items: center;
     color: #2e2f42;
+    
     
 }
 
-.team-title-list {
-    background-color: #FFFFFF;
+.team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    
 }
 
-.team-add-title {
+
+.team-title-list {
+    background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72px) /4);
+    margin: 0, auto;
+    
+    }
+
+.team-add-title { 
     font-weight:  500;
     font-size: 20px;
     line-height: 1.2;
@@ -144,6 +258,25 @@ a {
     color: #434455;
 }
 
+.our-portfolio {
+    margin-top: 120px;
+}
+
+
+.container-our-portfolio {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    width: calc((100% - 72px) /4);
+}
 
 .portfolio-title {
         font-size: 36px;
@@ -177,7 +310,31 @@ a {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        display: flex;
+        text-align: center;
+       
+}
+
+.footer-logo {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    text-decoration: none;
 }
 .page-footer {
     background-color: #2e2f42;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-left: 156px;
+}
+.footer-description {
+    max-width: 264px;
+    line-height: 1.5;
+    color: #f4f4fd;
+    margin: 0;
+    text-align: left;
 }
