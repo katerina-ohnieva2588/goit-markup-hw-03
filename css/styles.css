@@ -121,7 +121,7 @@ a {
     background-color: #2E2F42;
     width: 1440px;
     text-align: center;
-    padding: 188px;
+    padding: 188px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +157,11 @@ a {
     cursor: pointer;
     padding: 16px, 32px ;
     border: none; 
-    margin-top: 48px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    height: 56px;
+    min-width: 169px;
    
    
  
@@ -181,8 +185,9 @@ a {
     max-width: 1128px;
     margin: auto;
     display: flex;
-    
+    gap: 24px;   
 }
+
 
 .section-add-title {
     font-weight: 500;
@@ -190,6 +195,8 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:  #2e2f42;
+    flex-basis: calc((100% - 72px) /4);
+    margin-bottom: 8px;
 }
 
 .section-description {
@@ -240,6 +247,7 @@ a {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     width: calc((100% - 72px) /4);
     margin: 0, auto;
+    display: block;
     
     }
 
