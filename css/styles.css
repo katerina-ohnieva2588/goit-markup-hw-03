@@ -261,7 +261,13 @@ a {
     
     }
 
-.team-add-title { 
+    .team-card-content {
+        padding: 32px 0;
+    }
+
+
+
+    .team-add-title { 
     font-weight:  500;
     font-size: 20px;
     line-height: 1.2;
@@ -319,7 +325,7 @@ img {
 }
 
 .portfolio-info {
-    padding: 32px 0;
+    padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
     
