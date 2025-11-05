@@ -268,7 +268,9 @@ a {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42; }
+    color: #2e2f42; 
+    margin-bottom: 8px;
+}
 
 .team-description {
     font-weight: 400;
@@ -284,22 +286,12 @@ a {
 }
 
 
-.container-our-portfolio {
+.container {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    text-align: center;
-    gap: 24px;
-    width: calc((100% - 72px) /4);
-    row-gap: 48px;
-}
 
 .portfolio-title {
         font-size: 36px;
@@ -311,12 +303,23 @@ a {
         margin-bottom: 72px;
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    row-gap: 48px;
+}
+
 .portfolio-list-item {
     margin-bottom: 48px 0;
     width: calc((100% - 48px) / 3);
     
 }
-.container {
+.portfolio-info {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
@@ -338,17 +341,6 @@ a {
     letter-spacing: 0.02em;
     color: #434455;}
 
-.footer-description {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #f4f4fd;
-        display: flex;
-        text-align: center;
-       
-}
 
 .footer-logo {
     font-weight: 800;
@@ -357,19 +349,28 @@ a {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    display: inline-block;
 }
 .page-footer {
     background-color: #2e2f42;
-    display: flex;
+    display: inline-block;
+    margin-bottom: 16px;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    padding-left: 156px;
+    padding: 100px 0;
 }
+    
 .footer-description {
-    max-width: 264px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin: 0;
+    display: flex;
+    text-align: center;
+    max-width: 1158px;
     text-align: left;
+
 }
