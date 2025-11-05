@@ -316,11 +316,15 @@ a {
 
 .portfolio-list-item {
     margin-bottom: 48px 0;
-    width: calc((100% - 48px) / 3);
-    
+    width: calc((100% - 48px) / 3);    
 }
+
+.img {
+    display: inline-block;
+}
+
 .portfolio-info {
-    padding: 32px 16px;
+    padding: 32px 0;
     border: 1px solid #e7e9fc;
     border-top: none;
     
@@ -359,6 +363,7 @@ a {
     align-items: flex-start;
     gap: 16px;
     padding: 100px 0;
+    margin-bottom: 16px;
 }
     
 .footer-description {
