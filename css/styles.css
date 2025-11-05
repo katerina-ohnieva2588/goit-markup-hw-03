@@ -28,8 +28,8 @@ a {
 
 .container {
     max-width: 1158px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
 /* header */
@@ -41,6 +41,7 @@ a {
 .header-container { 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -320,6 +321,8 @@ a {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-info {
