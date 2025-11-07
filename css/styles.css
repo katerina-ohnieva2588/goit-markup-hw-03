@@ -201,7 +201,7 @@ a {
 
 .section-title-item {
     flex-basis: calc((100% - 72px) /4);
-    padding: 188px 0
+    
 }
 
 .section-add-title {
@@ -225,7 +225,6 @@ a {
 
 .our-team {
     background-color: #f4f4fd;
-    margin-bottom: 120px;
     padding: 120px 0;
 } 
 .team-title {
@@ -378,5 +377,5 @@ img {
     text-align: center;
     max-width: 1158px;
     text-align: left;
-
+    width: 264px;
 }
